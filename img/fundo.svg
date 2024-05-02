@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600"
+    zoomAndPan="magnify" viewBox="0 0 450 239.999995" height="320"
+    preserveAspectRatio="xMidYMid meet" version="1.0">
+    <defs>
+        <linearGradient id="teste" gradientTransform="rotate(90)">
+            <stop stop-color="#100A49" offset="50%"/>
+            <stop stop-color="#1C2B67" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#teste)"
+        d="M -21.035156 -16.167969 L 471.613281 -16.601562 L 469.777344 198.640625 C 469.777344 198.640625 455.820312 197.535156 438.183594 188.707031 C 421.890625 180.550781 355.660156 151.902344 224.382812 211.515625 C 125.5625 256.390625 44.746094 197.167969 -21.378906 202.015625 Z M -21.035156 -16.167969 "
+        fill-opacity="1" fill-rule="nonzero" />
+</svg>
