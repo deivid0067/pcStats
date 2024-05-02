@@ -3,8 +3,8 @@
     preserveAspectRatio="xMidYMid meet" version="1.0">
     <defs>
         <linearGradient id="teste" gradientTransform="rotate(90)">
-            <stop stop-color="#100A49" offset="50%"/>
-            <stop stop-color="#1C2B67" offset="100%"/>
+            <stop stop-color="#000020" offset="50%"/>
+            <stop stop-color="#131c46" offset="100%"/>
         </linearGradient>
     </defs>
     <path fill="url(#teste)"

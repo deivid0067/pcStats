@@ -19,6 +19,7 @@
     width: 100%;
     height: 100vh;
     z-index: -1;
+    overflow: hidden;
 }
 
 .background-inicial {
@@ -64,6 +65,10 @@ nav {
     text-transform: uppercase;
 }
 
+#navbar-list a:hover{
+    color: #007FFF;
+}
+
 .login-button {
     width: 80px;
     height: 40px;
@@ -71,7 +76,7 @@ nav {
     border: 0;
     font-family: Open Sans;
     transition: 0.5s;
-    font-weight: bold;
+    text-transform: uppercase;
     color: #100A49";
 }
 
@@ -80,3 +85,44 @@ nav {
     color: white;
     border: 1px solid;
 }
+
+.stars {
+    top: 0;
+    background: url('../img/estrelas2.svg');
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    width: 100dvw;
+    animation: starsSpace linear infinite forwards 10s;
+}
+
+
+#navbar-list .links-nav::before {
+    content: '';
+    bottom: -4px;
+    position: absolute;
+    background-color:  #007FFF;
+    border-radius: 4px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform .2s;
+    transform-origin: center;
+    height: 2px;
+}
+
+#navbar-list .links-nav:hover::before {
+    transform: scaleX(1);
+    transform-origin: center;
+    background-color: #007FFF;
+}
+
+
+@keyframes starsSpace {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 100vh;
+    }
+}
+
