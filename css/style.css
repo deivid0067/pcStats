@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
     text-decoration: none;
-    font-family: Open Sans, sans-serif;
+    font-family: Poppins, sans-serif;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF5757;
 }
 
 #home {
@@ -27,6 +36,7 @@
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+    filter: brightness(18%);
     transform: scaleX(-1);
 }
 
@@ -39,12 +49,12 @@ nav {
     position: fixed;
     top: 0;
     z-index: 99999;
-    height: 80px;
+    height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
     padding: 16px;
-    left: 0 ;
+    left: 0;
     gap: 32px;
 }
 
@@ -65,8 +75,8 @@ nav {
     text-transform: uppercase;
 }
 
-#navbar-list a:hover{
-    color: #007FFF;
+#navbar-list a:hover {
+    color: #FF5757;
 }
 
 .login-button {
@@ -74,13 +84,13 @@ nav {
     height: 40px;
     border-radius: 6px;
     border: 0;
-    font-family: Open Sans;
+    font-family: Poppins;
     transition: 0.5s;
     text-transform: uppercase;
-    color: #100A49";
+
 }
 
-.login-button:hover{
+.login-button:hover {
     background-color: transparent;
     color: white;
     border: 1px solid;
@@ -88,7 +98,7 @@ nav {
 
 .stars {
     top: 0;
-    background: url('../img/estrelas2.svg');
+    /* background: url('../img/imagePc.png'); */
     height: 100vh;
     position: absolute;
     left: 0;
@@ -101,7 +111,7 @@ nav {
     content: '';
     bottom: -4px;
     position: absolute;
-    background-color:  #007FFF;
+    background-color: #FF5757;
     border-radius: 4px;
     width: 100%;
     transform: scaleX(0);
@@ -113,16 +123,85 @@ nav {
 #navbar-list .links-nav:hover::before {
     transform: scaleX(1);
     transform-origin: center;
-    background-color: #007FFF;
+    background-color: #FF5757;
 }
 
 
-@keyframes starsSpace {
+
+#header_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FF5757;
+}
+
+.slogan {
+    width: 500px;
+    font-size: 20px;
+}
+
+.header-image {
+    width: 500px;
+    animation: float 2s infinite ease-in-out alternate;
+}
+
+
+
+@keyframes float {
     0% {
-        background-position-y: 0;
+        transform: translateY(0);
     }
+
     100% {
-        background-position-y: 100vh;
+        transform: translateY(15px);
     }
+
 }
+
+.oque-e {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.texto_sobre {
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;   
+}
+
+.texto_sobre h1{
+    font-size: 30px;
+    color: #FF5757;
+    display: flex;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.texto_sobre span {
+    color: black;
+    display: flex;
+    text-align: end;
+    font-size: 20px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image img {
+    width: 75%;
+    height: 50%;
+    object-fit: cover;
+}
+
 
