@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+
+:root {
+    --white: #FFF;
+    --whitesmoke: #F9F9F9;
+    --lightgrey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+    --black: #000000;
+    --red: #CF3C3F;
+}
+
+main {
+    display: flex;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px);
+}
+
+.logo {
+    width: 130px;
+    margin-bottom: 80px;
+}
+
+.login-title  {
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.input_login {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    background-color: var(--lightgrey);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: bold;
+    color: var(--deep-grey);
+}
+
+.input_login span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.input_login  {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.input_login .active{
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.login_button {
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.login_button span {
+    color: white;
+    margin-top: 12px;
+}
+
+.login_button:hover {
+    cursor: auto;
+    background-color: white;
+    border: 2px solid var(--lightgrey);
+}
+
+.login_button:hover span {
+    color: var(--lightgrey);
+}
+
+.login-link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.background_forms {
+    width: 100%;
+    background-image: url('../img/pcStats.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    filter: brightness(20%);
+}

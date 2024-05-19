@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pcStats</title>
     <link rel="stylesheet" href="./css/style.css" />
+
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -38,14 +41,14 @@
         </ul>
       </nav>
 
-      <div id="header_content">
-        <div class="content-title">
+      <div id="header_content" >
+        <div class="content-title" data-aos="fade-right" data-aos-duration="1200">
           <h1>Deixando seu<br />Desktop espacial</h1>
           <span style="color: white"
             >Forúm sobre computadores gamers em geral</span
           >
         </div>
-        <div class="slogan">
+        <div class="slogan" data-aos="fade-left" data-aos-duration="1200">
           <img src="./img/Home.svg" class="header-image" />
         </div>
       </div>
@@ -53,19 +56,37 @@
 
     <main>
       <section id="Oque">
-          <div class="image">
+          <div class="image" data-aos="fade-down" data-aos-duration="1200">
           <img src="./img/logoREd.png">
         </div>
-        <div class="oque-e">
+        <div class="oque-e" data-aos="fade-up" data-aos-duration="1200">
           <div class="texto_sobre">
             <h1>Oque é ?</h1>
-            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi magni maxime amet nesciunt maiores beatae, asperiores provident rerum et nostrum mollitia explicabo sit totam possimus, quod laborum quis repellat sequi?</span>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi magni maxime amet nesciunt maiores beatae, asperiores provident rerum et nostrum mollitia explicabo sit totam possimus, quod laborum quis repellat sequi?
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi magni maxime amet nesciunt maiores beatae, asperiores provident rerum et nostrum mollitia expl sit totam possimus, quod laborum quis repellat sequi?
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi magni maxime amet nesciunt maiores beatae, asperiores provident rerum et nostrum mollitia explicabo sit totam possimus, quod laborum quis repellat sequi?
+            </span>
           </div>
         </div>
         <img src="./img/galaxia.svg" class="galaxia">
+      </section>
+
+      <section id="historia">
+        <h1>Historia</h1>
+        <div class="container-historia">
+          <div class="container-historia-body">
+            
+          </div>
+          <img src="./img/pc-icon.svg" class="icon-pc">
+        </div>
+
+        
+
       </section>
     </main>
   </body>
 </html>
 
 <script src="./js/navbar.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
