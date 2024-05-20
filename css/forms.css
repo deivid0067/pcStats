@@ -130,9 +130,9 @@ main {
 
 .background_forms {
     width: 100%;
-    background-image: url('../img/pcStats.jpg');
+    background-image: url('../img/hardware.jpg');
     background-size: cover;
     background-position: center;
     flex: 1;
-    filter: brightness(20%);
+    filter: brightness(24%);
 }

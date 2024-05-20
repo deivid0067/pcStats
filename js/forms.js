@@ -13,7 +13,6 @@ const handleFocusOut = (e) => {
     }
 }
 
-
 inputs.forEach((input) => {
     input.addEventListener('focus', handleFocus);
     input.addEventListener('blur', handleFocusOut);
