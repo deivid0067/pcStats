@@ -1,5 +1,5 @@
 # pcStats
-Projeto Individual sobre Peças de Computador SPTECH
+Projeto Individual sobre Peças de Computador 
 
 
 <div align="center"> 
