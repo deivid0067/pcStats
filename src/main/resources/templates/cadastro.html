@@ -10,9 +10,16 @@
 
 <body>
     <main>
-        <section class="forms">
+        <form class="forms" action="cadastro" method="post">
             <img src="./img/logoREd.png" class="logo">
             <h1 class="login-title">Cadastre-se</h1>
+
+
+            <label class="input_login">
+                <span>Nome</span>
+                <input type="text" name="name" class="input">
+            </label>
+
 
             <label class="input_login">
                 <span>Nome de usuário</span>
@@ -31,18 +38,18 @@
 
             <label class="input_login">
                 <span>Confirmar senha</span>
-                <input type="password" name="password" class="input">
+                <input type="password" name="confirm" class="input">
             </label>
 
 
 
-            <button type="button" class="login_button"><span>LOGIN</span></button>
+            <button class="login_button"><span>Cadastrar</span></button>
 
             <span class="login-link">Já possui um cadastro ?</span>
             <a href="#" class="login-link">Login</a>
             <a href="#" class="login-link">Retornar ao Inicio</a>
 
-        </section>
+        </form>
 
         <section class="background_forms"></section>
     </main>
